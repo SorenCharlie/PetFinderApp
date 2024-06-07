@@ -2877,6 +2877,10 @@ video {
   max-width: 100%;
 }
 
+#hero-image{
+  height: 700px;
+}
+
 iframe {
   border: 0;
 }
