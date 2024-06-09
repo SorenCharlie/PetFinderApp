@@ -12926,13 +12926,15 @@ label.panel-block:hover {
   --bulma-tabs-link-active-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-background-l));
 }
 .hero.is-info .subtitle {
-  --bulma-subtitle-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));
-  --bulma-subtitle-strong-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));
-}
+  /* --bulma-subtitle-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));
+  --bulma-subtitle-strong-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));*/
+  color: white;
+} 
 .hero.is-info .title {
   --bulma-title-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));
   --bulma-title-strong-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Pacifico','Courier New', Courier, monospace;
+  color: white;
 }
 .hero.is-info.is-bold {
   background-image: linear-gradient(141deg, hsl(calc(var(--bulma-hero-h) - 5deg), calc(var(--bulma-hero-s) + 10%), calc(var(--bulma-hero-background-l) + 5%)) 0%, hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-background-l)) 71%, hsl(calc(var(--bulma-hero-h) + 5deg), calc(var(--bulma-hero-s) - 10%), calc(var(--bulma-hero-background-l) - 5%)) 100%);
