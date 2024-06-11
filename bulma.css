@@ -15393,14 +15393,16 @@ print {
 }
 
 .hero.is-info .subtitle {
-  --bulma-subtitle-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));
-  --bulma-subtitle-strong-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));
-}
+  /* --bulma-subtitle-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));
+  --bulma-subtitle-strong-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));*/
+  color: white;
+} 
 
 .hero.is-info .title {
   --bulma-title-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));
   --bulma-title-strong-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Pacifico','Courier New', Courier, monospace;
+  color: white;
 }
 
 .hero.is-info.is-bold {
