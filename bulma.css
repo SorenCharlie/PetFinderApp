@@ -3381,6 +3381,7 @@ fieldset[disabled] .button {
   position: absolute;
   right: 0;
   top: 0;
+
 }
 
 .navbar-burger,
@@ -7879,6 +7880,7 @@ button.dropdown-item.is-selected {
 }
 
 .modal {
+  
   --bulma-modal-z: 40;
   --bulma-modal-background-background-color: hsla(var(--bulma-scheme-h), var(--bulma-scheme-s), var(--bulma-scheme-invert-l), 0.86);
   --bulma-modal-content-width: 40rem;
