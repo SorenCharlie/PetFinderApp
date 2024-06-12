@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Petfinder</title>
-  <link rel="stylesheet" href="./bulma.css">
+  <link rel="stylesheet" href="bulma.css">
   <!-- Used Gogle API for Pacifico Font -->
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 
@@ -33,16 +33,20 @@
 
 
       <div id="navbarBasicExample" class="navbar-menu is-centered">
-        <a class="navbar-item">
-          Find an adoption center
+create-button/modal
+          <a class="navbar-item">
+            <!--Created buttons inside navbar on lines 39 & 45 -->
+            <button class="button is-info">Find an adoption center</button>
+            
+          </a>
+    
+         <a class="navbar-item">
 
-        </a>
+         <button class="button is-info">Breed info</button>
+          </a>
+    
+          <!-- <div class="navbar-item has-dropdown is-hoverable">
 
-        <a class="navbar-item">
-          Breed info
-        </a>
-
-        <!-- <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-link">
               More
             </a>
@@ -85,12 +89,26 @@
     </section>
   </header>
   <main>
-
+    <!-- Added Modal to main and made active -->
+    <div id="modal" class="modal is-active">
+      <div class="modal-background"></div>
+      <div class="modal-content">
+        <!-- Any other Bulma elements you want -->
+        <!-- Add box for modal  -->
+        <div class="box">
+         <p>Welcome to you first step to Finding a Pet Partner!</p>
+        </div>
+      </div>
+      <button id="closeModal" class="modal-close" aria-label="close"></button>
+    </div>
   </main>
   <footer>
 
   </footer>
-  <script> src = './script.js'</script>
+create-button/modal
+  <!-- link for script file -->
+  <script src="homepage.js"></script>
+
 </body>
 
 </html>
