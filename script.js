@@ -1,19 +1,9 @@
-var requestUrl= 'https://api.thecatapi.com/v1/images/0XYvRd7oD';
+//let requestUrl='https://api.thecatapi.com/v1/breeds?lapi_key=live_J3RlgflYzdMY2mgGPbcH4sM05urjmxrQSOj2gq1dUp6bLjZKERicSiuBotBdlHTt'
 
-    // JavaScript for handling nav bar link clicks
-    document.querySelectorAll('nav a').forEach(link => {
-        link.addEventListener('click', function(event) {
-          event.preventDefault(); // Prevent the default link behavior
-          const requestUrl = this.getAttribute('data-url'); // Get the URL from the data-url attribute
-          // Fetch the content from the URL
-          fetch(url)
-            .then(response => response.text())
-            .then(html => {
-              document.getElementById('content').innerHTML = html; // Load the content into the content div
-            })
-            .catch(error => {
-              console.error('Error fetching content:', error);
-              document.getElementById('content').innerHTML = '<p>Failed to load content.</p>'; // Handle errors
-            });
-        });
-      });
+fetch(requestUrl)
+  .then(function(response) {
+    return response.json();
+  })
+  .then (function (data) {
+    console.log(data);
+  });
