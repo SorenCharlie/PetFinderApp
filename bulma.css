@@ -9161,6 +9161,19 @@ print {
   --bulma-panel-heading-background-l: var(--bulma-primary-l);
   --bulma-panel-heading-color-l: var(--bulma-primary-invert-l);
 }
+/* Remove default list styling to ensure a clean look */
+.breed-list {
+  list-style-type: none; /* Removes bullets from list items */
+  padding: 0; /* Removes default padding from the list */
+}
+
+/* Add padding and a border to each breed item for better readability */
+.breed-item {
+  padding: 10px; /* Adds space inside each list item for better readability */
+  border-bottom: 1px solid #ccc; /* Adds a light gray border below each item to visually separate them */
+}
+
+
 
 .panel.is-link {
   --bulma-panel-h: var(--bulma-link-h);
