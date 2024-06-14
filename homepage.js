@@ -30,6 +30,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const response = await fetch('https://api.thecatapi.com/v1/breeds');
         const breeds = await response.json();
         displayBreeds(breeds);
+        //mapping breed names 
+        const mappedNames = breeds.map(breed => breed.name);
+        //creating localstorage
+        localStorage.setItem('name', mappedNames);
       } catch (error) {
         console.error('Error fetching breed data:', error);
         breedInfoContainer.innerHTML = '<p>Failed to load breed information. Please try again later.</p>';
