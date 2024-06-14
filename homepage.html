@@ -29,12 +29,12 @@
       <div id="navbarBasicExample" class="navbar-menu is-centered">
         <!-- Created buttons inside the navbar -->
         <a class="navbar-item">
-          <button class="button is-info">Find an adoption center</button>
+          <button class="button is-info">Dog Breeds</button>
         </a>
 
         <a class="navbar-item">
           <!-- Added ID to button for fetching breed info -->
-          <button id="breedInfoButton" class="button is-info">Breed info</button>
+          <button id="catBreedInfoButton" class="button is-info">Cat Breeds</button>
         </a>
       </div>
     </nav>
@@ -62,49 +62,13 @@
     </div>
 
     <!-- Added section for breed info -->
-    <section id="breedInfoContainer" class="section"></section>
+    <section id="catBreedInfoContainer" class="section"></section>
   </main>
 
   <footer></footer>
 
   <!-- Linked script file for JS functionality -->
   <script src="homepage.js"></script>
-  <script>
-    // JavaScript to handle fetching and displaying breed info
-    document.addEventListener('DOMContentLoaded', () => {
-      const breedInfoButton = document.getElementById('breedInfoButton');
-      const breedInfoContainer = document.getElementById('breedInfoContainer');
-
-      breedInfoButton.addEventListener('click', async () => {
-        try {
-          // Fetch breed info from API
-          const response = await fetch('https://api.thecatapi.com/v1/breeds');
-          const breeds = await response.json();
-          displayBreeds(breeds);
-        } catch (error) {
-          console.error('Error fetching breed data:', error);
-          breedInfoContainer.innerHTML = '<p>Failed to load breed information. Please try again later.</p>';
-        }
-      });
-
-      function displayBreeds(breeds) {
-        // Clear previous content
-        breedInfoContainer.innerHTML = '';
-        const breedList = document.createElement('ul');
-        breedList.classList.add('breed-list');
-
-        // Populate list with breed data
-        breeds.forEach(breed => {
-          const listItem = document.createElement('li');
-          listItem.classList.add('breed-item');
-          listItem.innerHTML = `<strong>${breed.name}</strong>: ${breed.description}`;
-          breedList.appendChild(listItem);
-        });
-
-        breedInfoContainer.appendChild(breedList);
-      }
-    });
-  </script>
 </body>
 
 </html>

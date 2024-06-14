@@ -19,3 +19,37 @@ window.addEventListener('click', (event) => {
 });
 
     
+// JavaScript to handle fetching and displaying breed info
+document.addEventListener('DOMContentLoaded', () => {
+    const breedInfoButton = document.getElementById('catBreedInfoButton');
+    const breedInfoContainer = document.getElementById('catBreedInfoContainer');
+
+    breedInfoButton.addEventListener('click', async () => {
+      try {
+        // Fetch breed info from API
+        const response = await fetch('https://api.thecatapi.com/v1/breeds');
+        const breeds = await response.json();
+        displayBreeds(breeds);
+      } catch (error) {
+        console.error('Error fetching breed data:', error);
+        breedInfoContainer.innerHTML = '<p>Failed to load breed information. Please try again later.</p>';
+      }
+    });
+
+    function displayBreeds(breeds) {
+      // Clear previous content
+      breedInfoContainer.innerHTML = '';
+      const breedList = document.createElement('ul');
+      breedList.classList.add('breed-list');
+
+      // Populate list with breed data
+      breeds.forEach(breed => {
+        const listItem = document.createElement('li');
+        listItem.classList.add('breed-item');
+        listItem.innerHTML = `<strong>${breed.name}</strong>: ${breed.description}`;
+        breedList.appendChild(listItem);
+      });
+
+      breedInfoContainer.appendChild(breedList);
+    }
+  });
