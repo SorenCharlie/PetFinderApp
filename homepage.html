@@ -9,18 +9,7 @@
   <!-- Used Google API for Pacifico Font -->
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 
-  <!-- Added custom CSS for breed list styling -->
-  <style>
-    .breed-list {
-      list-style-type: none; /* Removes default bullets from list items */
-      padding: 0; /* Removes default padding from the list */
-    }
-
-    .breed-item {
-      padding: 10px; /* Adds space inside each list item for better readability */
-      border-bottom: 1px solid #ccc; /* Adds a light gray border below each item to visually separate them */
-    }
-  </style>
+ 
 </head>
 
 <body>
@@ -29,21 +18,24 @@
       <div id="navbarBasicExample" class="navbar-menu is-centered">
         <!-- Created buttons inside the navbar -->
         <a class="navbar-item">
-          <button class="button is-info">Dog Breeds</button>
+          <button id="catBreedInfoButton" class="button is-info">Cat Breeds Information</button>
+          
         </a>
 
         <a class="navbar-item">
           <!-- Added ID to button for fetching breed info -->
-          <button id="catBreedInfoButton" class="button is-info">Cat Breeds</button>
+          <button id="dogBreedInfoButton" class="button is-info">Dog Breeds Information</button>
         </a>
       </div>
     </nav>
 
     <section class="hero is-info">
       <div class="hero-body">
-        <p class="title">Petfinder</p>
-        <p class="subtitle">Find your furry companion!</p>
-        <img id="hero-image" src="./PetGroupPhoto.jpg" alt="image of cats and dogs lined up">
+        <div class="title-section">
+          <p class="title">Petfinder</p>
+          <p class="subtitle">Find your furry companion!</p>
+        </div>
+        <img id="hero-image" src="./PetGroupPhoto.jpg" alt="image of various breeds of cats and dogs in two rows">
       </div>
     </section>
   </header>
@@ -63,6 +55,7 @@
 
     <!-- Added section for breed info -->
     <section id="catBreedInfoContainer" class="section"></section>
+    <section id="dogBreedInfoContainer" class="section"></section>
   </main>
 
   <footer></footer>
