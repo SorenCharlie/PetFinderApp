@@ -61,6 +61,14 @@
   border-bottom: 1px solid #ccc; /* Adds a light gray border below each item to visually separate them */
 }
 
+.breed-info-heading {
+  font-size: 18pt;
+  font-weight: bold;
+}
+
+.breed-info-section {
+  margin: 50px;
+}
 
 /*! bulma.io v1.0.0 | MIT License | github.com/jgthms/bulma */
 /* Bulma Utilities */
