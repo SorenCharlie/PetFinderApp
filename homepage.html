@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Petfinder</title>
+  <!-- linked bulma stylesheet -->
   <link rel="stylesheet" href="bulma.css">
   <!-- Used Google API for Pacifico Font -->
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
@@ -18,13 +19,13 @@
       <div id="navbarBasicExample" class="navbar-menu is-centered">
         <!-- Created buttons inside the navbar -->
         <a class="navbar-item">
-          <button id="catBreedInfoButton" class="button is-info">Cat Breeds Information</button>
+          <button id="catBreedInfoButton" class="button is-info">Cat Breed Information</button>
 
         </a>
 
         <a class="navbar-item">
           <!-- Added ID to button for fetching breed info -->
-          <button id="dogBreedInfoButton" class="button is-info">Dog Breeds Information</button>
+          <button id="dogBreedInfoButton" class="button is-info">Dog Breed Information</button>
         </a>
       </div>
     </nav>
@@ -54,18 +55,23 @@
     </div>
 
     <!-- Added section for breed info -->
-    <section class="breed-info-section">
-      <h2 class="breed-info-heading">Cat Breed Information</h2>
-      <p>Click the Navigation buttons to see more Information on cats!</p>
-    </section>
-    <section class="breed-info-section" id="catBreedInfoContainer"></section>
-
-    <section class="breed-info-section">
-      <h2 class="breed-info-heading">Dog Breed Information</h2>
-      <p>Click the Navigation buttons to see more Information on dogs!</p>
-    </section>
-
-    <section class="breed-info-section" id="dogBreedInfoContainer"></section>
+     <!-- created columns and sections for each -->
+    <div class="row">
+      <div class="column">
+        <section class="breed-info-section">
+          <h2 class="breed-info-heading">Cat Breed Information</h2>
+          <p>Click the button at the top to see more Information on different cat breeds!</p>
+        </section>
+        <section class="breed-info-section" id="catBreedInfoContainer"></section>
+      </div>
+      <div class="column">
+        <section class="breed-info-section">
+          <h2 class="breed-info-heading">Dog Breed Information</h2>
+          <p>Click the button at the top to see more Information on different dog breeds!</p>
+        </section>
+        <section class="breed-info-section" id="dogBreedInfoContainer"></section>
+      </div>
+    </div>
   </main>
 
   <footer></footer>
