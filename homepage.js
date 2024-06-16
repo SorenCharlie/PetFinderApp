@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
   breedInfoButton.addEventListener('click', async () => {
     try {
       // Fetch breed info from API
-      const response = await fetch('https://api.thecatapi.com/v1/breeds?limit=20');
+      const response = await fetch('https://api.thecatapi.com/v1/breeds');
       const breeds = await response.json();
       displayBreeds(breeds);
       //mapping breed names 
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
   breedInfoButton.addEventListener('click', async () => {
     try {
       // Fetch breed info from API
-      const response = await fetch('https://api.thedogapi.com/v1/breeds?limit=20');
+      const response = await fetch('https://api.thedogapi.com/v1/breeds');
       const breeds = await response.json();
       displayBreeds(breeds);
       //mapping breed names 
