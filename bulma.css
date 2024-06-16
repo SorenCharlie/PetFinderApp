@@ -1,5 +1,15 @@
 @charset "UTF-8";
+ /* added height to modal */
+.modal.is-active {
+  display: flex;
+  height: 600px;
+  margin-top: 80px;
+}
 
+/* increase width of .box to make room for text */
+.box {
+  width: 
+}
 
 .button.is-info {
   /* made color white */
@@ -7940,7 +7950,6 @@ button.dropdown-item.is-selected {
   
   --bulma-modal-z: 40;
   --bulma-modal-background-background-color: hsla(var(--bulma-scheme-h), var(--bulma-scheme-s), var(--bulma-scheme-invert-l), 0.86);
-  --bulma-modal-content-width: 40rem;
   --bulma-modal-content-margin-mobile: 1.25rem;
   --bulma-modal-content-spacing-mobile: 10rem;
   --bulma-modal-content-spacing-tablet: 2.5rem;
@@ -7960,6 +7969,8 @@ button.dropdown-item.is-selected {
   --bulma-modal-card-body-padding: 2rem;
 }
 
+/* removed   --bulma-modal-content-width: 40rem; to remove scroll bar */
+
 .modal {
   align-items: center;
   display: none;
@@ -7968,10 +7979,6 @@ button.dropdown-item.is-selected {
   overflow: hidden;
   position: fixed;
   z-index: var(--bulma-modal-z);
-}
-
-.modal.is-active {
-  display: flex;
 }
 
 .modal-background {
