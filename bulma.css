@@ -1,5 +1,95 @@
 @charset "UTF-8";
 
+/* creating columns */
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+
+ /* added height to modal */
+.modal.is-active {
+  display: flex;
+  height: 600px;
+  margin-top: 80px;
+}
+
+/* increase width of .box to make room for text in modal*/
+.box {
+  width: 
+}
+
+.button.is-info {
+  /* made color white */
+  color: white;
+  --bulma-button-h: var(--bulma-info-h);
+  --bulma-button-s: var(--bulma-info-s);
+  --bulma-button-l: var(--bulma-info-l);
+  --bulma-button-background-l: var(--bulma-info-l);
+  --bulma-button-border-l: var(--bulma-info-l);
+  --bulma-button-border-width: 0px;
+  --bulma-button-color-l: var(--bulma-info-invert-l);
+  --bulma-button-outer-shadow-a: 0;
+}
+
+/* changed styles for header position and size */
+
+.hero-body {
+  flex-grow: 1;
+  flex-shrink: 0;
+  padding: var(--bulma-hero-body-padding);
+}
+
+.title-section {
+  float: left;
+  margin: 150px;
+}
+
+.hero.is-info .title {
+  --bulma-title-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));
+  --bulma-title-strong-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));
+  font-family: 'Pacifico','Courier New', Courier, monospace;
+  color: white;
+  font-size: 60pt;
+  margin-left: 30px;
+}
+
+.hero.is-info .subtitle {
+  /* --bulma-subtitle-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));
+  --bulma-subtitle-strong-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));*/
+  color: white;
+  font-size: 24pt;
+  margin: 15px;
+} 
+
+#hero-image {
+  height: 500px;
+  float: right;
+  padding-right: 150px;
+}
+
+/* Added custom CSS for breed list styling*/
+.breed-list {
+  list-style-type: none; /* Removes default bullets from list items */
+  padding: 0; /* Removes default padding from the list */
+}
+
+.breed-item {
+  padding: 10px; /* Adds space inside each list item for better readability */
+  border-bottom: 1px solid #ccc; /* Adds a light gray border below each item to visually separate them */
+}
+
+.breed-info-heading {
+  font-size: 18pt;
+  font-weight: bold;
+}
+
+.breed-info-section {
+  margin: 50px;
+}
+
 /*! bulma.io v1.0.0 | MIT License | github.com/jgthms/bulma */
 /* Bulma Utilities */
 :root {
@@ -2882,9 +2972,7 @@ video {
   max-width: 100%;
 }
 
-#hero-image {
-  height: 700px;
-}
+
 
 iframe {
   border: 0;
@@ -3825,17 +3913,6 @@ fieldset[disabled] .button.is-link {
   background-color: var(--bulma-link);
   border-color: var(--bulma-link);
   box-shadow: none;
-}
-
-.button.is-info {
-  --bulma-button-h: var(--bulma-info-h);
-  --bulma-button-s: var(--bulma-info-s);
-  --bulma-button-l: var(--bulma-info-l);
-  --bulma-button-background-l: var(--bulma-info-l);
-  --bulma-button-border-l: var(--bulma-info-l);
-  --bulma-button-border-width: 0px;
-  --bulma-button-color-l: var(--bulma-info-invert-l);
-  --bulma-button-outer-shadow-a: 0;
 }
 
 .button.is-info:focus-visible,
@@ -7883,7 +7960,6 @@ button.dropdown-item.is-selected {
   
   --bulma-modal-z: 40;
   --bulma-modal-background-background-color: hsla(var(--bulma-scheme-h), var(--bulma-scheme-s), var(--bulma-scheme-invert-l), 0.86);
-  --bulma-modal-content-width: 40rem;
   --bulma-modal-content-margin-mobile: 1.25rem;
   --bulma-modal-content-spacing-mobile: 10rem;
   --bulma-modal-content-spacing-tablet: 2.5rem;
@@ -7903,6 +7979,8 @@ button.dropdown-item.is-selected {
   --bulma-modal-card-body-padding: 2rem;
 }
 
+/* removed   --bulma-modal-content-width: 40rem; to remove scroll bar */
+
 .modal {
   align-items: center;
   display: none;
@@ -7911,10 +7989,6 @@ button.dropdown-item.is-selected {
   overflow: hidden;
   position: fixed;
   z-index: var(--bulma-modal-z);
-}
-
-.modal.is-active {
-  display: flex;
 }
 
 .modal-background {
@@ -15407,18 +15481,9 @@ print {
   --bulma-tabs-link-active-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-background-l));
 }
 
-.hero.is-info .subtitle {
-  /* --bulma-subtitle-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));
-  --bulma-subtitle-strong-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));*/
-  color: white;
-} 
 
-.hero.is-info .title {
-  --bulma-title-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));
-  --bulma-title-strong-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));
-  font-family: 'Pacifico','Courier New', Courier, monospace;
-  color: white;
-}
+
+
 
 .hero.is-info.is-bold {
   background-image: linear-gradient(141deg, hsl(calc(var(--bulma-hero-h) - 5deg), calc(var(--bulma-hero-s) + 10%), calc(var(--bulma-hero-background-l) + 5%)) 0%, hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-background-l)) 71%, hsl(calc(var(--bulma-hero-h) + 5deg), calc(var(--bulma-hero-s) - 10%), calc(var(--bulma-hero-background-l) - 5%)) 100%);
@@ -15657,11 +15722,6 @@ print {
   flex-shrink: 0;
 }
 
-.hero-body {
-  flex-grow: 1;
-  flex-shrink: 0;
-  padding: var(--bulma-hero-body-padding);
-}
 
 @media screen and (min-width: 769px),
 print {

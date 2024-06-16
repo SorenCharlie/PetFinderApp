@@ -5,22 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Petfinder</title>
+  <!-- linked bulma stylesheet -->
   <link rel="stylesheet" href="bulma.css">
   <!-- Used Google API for Pacifico Font -->
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 
-  <!-- Added custom CSS for breed list styling -->
-  <style>
-    .breed-list {
-      list-style-type: none; /* Removes default bullets from list items */
-      padding: 0; /* Removes default padding from the list */
-    }
 
-    .breed-item {
-      padding: 10px; /* Adds space inside each list item for better readability */
-      border-bottom: 1px solid #ccc; /* Adds a light gray border below each item to visually separate them */
-    }
-  </style>
 </head>
 
 <body>
@@ -29,21 +19,24 @@
       <div id="navbarBasicExample" class="navbar-menu is-centered">
         <!-- Created buttons inside the navbar -->
         <a class="navbar-item">
-          <button class="button is-info">Dog Breeds</button>
+          <button id="catBreedInfoButton" class="button is-info">Cat Breed Information</button>
+
         </a>
 
         <a class="navbar-item">
           <!-- Added ID to button for fetching breed info -->
-          <button id="catBreedInfoButton" class="button is-info">Cat Breeds</button>
+          <button id="dogBreedInfoButton" class="button is-info">Dog Breed Information</button>
         </a>
       </div>
     </nav>
 
     <section class="hero is-info">
       <div class="hero-body">
-        <p class="title">Petfinder</p>
-        <p class="subtitle">Find your furry companion!</p>
-        <img id="hero-image" src="./PetGroupPhoto.jpg" alt="image of cats and dogs lined up">
+        <div class="title-section">
+          <p class="title">Petfinder</p>
+          <p class="subtitle">Find your furry companion!</p>
+        </div>
+        <img id="hero-image" src="./PetGroupPhoto.jpg" alt="image of various breeds of cats and dogs in two rows">
       </div>
     </section>
   </header>
@@ -55,14 +48,30 @@
       <div class="modal-content">
         <!-- Added box element for modal content -->
         <div class="box">
-          <p>Welcome to your first step to Finding a Pet Partner!</p>
+          <p>Welcome to your first step to Finding a Pet Partner! Click the X at the top to get started.</p>
         </div>
       </div>
       <button id="closeModal" class="modal-close" aria-label="close"></button>
     </div>
 
     <!-- Added section for breed info -->
-    <section id="catBreedInfoContainer" class="section"></section>
+     <!-- created columns and sections for each cat and dog -->
+    <div class="row">
+      <div class="column">
+        <section class="breed-info-section">
+          <h2 class="breed-info-heading">Cat Breed Information</h2>
+          <p>Click the button at the top to see more Information on different cat breeds!</p>
+        </section>
+        <section class="breed-info-section" id="catBreedInfoContainer"></section>
+      </div>
+      <div class="column">
+        <section class="breed-info-section">
+          <h2 class="breed-info-heading">Dog Breed Information</h2>
+          <p>Click the button at the top to see more Information on different dog breeds!</p>
+        </section>
+        <section class="breed-info-section" id="dogBreedInfoContainer"></section>
+      </div>
+    </div>
   </main>
 
   <footer></footer>
@@ -72,6 +81,3 @@
 </body>
 
 </html>
-
-
-
