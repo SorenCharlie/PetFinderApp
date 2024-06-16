@@ -1,0 +1,43 @@
+## Description
+Provide a short description explaining the what, why, and how of your project. Use the folowing questions as a guide:
+- What was your motivation?
+- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
+- What problem does it solve?
+- What did you learn?
+
+## Usage
+Provide instructions and examples for use. Include screenshots as needed.
+
+Pet Finder Demo:
+
+More Screenshots:
+![WideScreeshotModal](./PetFinderimages/WideScreenModalOpen.PNG)
+![WideScreeshotModalClosed](./PetFinderimages/WideScreenModalClosed.PNG)
+![WideScreen](./PetFinderimages/WideScreenBreedsPopulated.PNG)
+
+## Credits
+TEAM ForEverFreinds:
+Soren Rowden
+https://github.com/SorenCharlie
+
+Wilmert Delorbe
+https://github.com/wilmertdelorbe
+
+Kobie Roberts
+https://github.com/kobESB6
+
+## Resources
+Color Code Youtube API Fetch for Beginners Tutorial:
+https://www.youtube.com/watch?v=ubw2hdQIl4E
+Making Request First API request for Cat API Tutorial:
+https://www.youtube.com/watch?v=wszFDXP0lkA
+Javascript Fetch API Tutorial:
+https://www.youtube.com/watch?v=7f2HNadULOs
+Cat API:
+https://thecatapi.com/
+Dog API:
+https://thedogapi.com/
+Bulma:
+https://bulma.io/documentation/
+
+
