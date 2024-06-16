@@ -1,0 +1,44 @@
+## Description
+This app is meant to help prospecitve pet owners find a pet that is most suited for them. Currently, we have two APIs calling information on cat and dog breeds. For cats, we pull a breed descirption, temperament, weight, and life span. For dogs, we pull what they were bred for, temperament, weight, height, and life span. 
+For future development, we want to add a adoption center finder that can filter by types of adoption centers (i.e. pet store, no-kill centers, etc). We would also like to provide information on more types of animals.
+
+We wanted to created a one-stop app for people searching for their furry friend. Here, they can find information on breeds to they can determine the animal with the best temperment for their lifestyle. They can also get information if they are searching for an ESA (Emotional Support Animal). Once we have an adoption center finder, they would also be able to find a location closest to them that has the breeds they are looking for. 
+
+We learned about calling APIs and fethcing the information we want to include. We also learned about styleing and object method and working with DOM. We learned how to use local storage to store the breed names and mapped the names so they all were stored. Overall, it was a very good learning experience about putting together an app and making it functional and polished for a good user experience. We also learned about navigating github and keeping everyone synced. 
+
+## Usage
+Provide instructions and examples for use. Include screenshots as needed.
+
+Pet Finder Demo:
+
+More Screenshots:
+![WideScreeshotModal](./PetFinderimages/WideScreenModalOpen.PNG)
+![WideScreeshotModalClosed](./PetFinderimages/WideScreenModalClosed.PNG)
+![WideScreen](./PetFinderimages/WideScreenBreedsPopulated.PNG)
+
+## Credits
+TEAM ForEverFreinds:
+Soren Rowden
+https://github.com/SorenCharlie
+
+Wilmert Delorbe
+https://github.com/wilmertdelorbe
+
+Kobie Roberts
+https://github.com/kobESB6
+
+## Resources
+Color Code Youtube API Fetch for Beginners Tutorial:
+https://www.youtube.com/watch?v=ubw2hdQIl4E
+Making Request First API request for Cat API Tutorial:
+https://www.youtube.com/watch?v=wszFDXP0lkA
+Javascript Fetch API Tutorial:
+https://www.youtube.com/watch?v=7f2HNadULOs
+Cat API:
+https://thecatapi.com/
+Dog API:
+https://thedogapi.com/
+Bulma:
+https://bulma.io/documentation/
+
+
