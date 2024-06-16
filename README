@@ -7,11 +7,9 @@ We wanted to created a one-stop app for people searching for their furry friend.
 We learned about calling APIs and fethcing the information we want to include. We also learned about styleing and object method and working with DOM. We learned how to use local storage to store the breed names and mapped the names so they all were stored. Overall, it was a very good learning experience about putting together an app and making it functional and polished for a good user experience. We also learned about navigating github and keeping everyone synced. 
 
 ## Usage
-Provide instructions and examples for use. Include screenshots as needed.
+To use this app, first close the modal that is opened by default when you load the page. Then click on the buttons to get information on cat and dog breeds to begin looking for your furry companion. 
 
-Pet Finder Demo:
-
-More Screenshots:
+Screenshots:
 ![WideScreeshotModal](./PetFinderimages/WideScreenModalOpen.PNG)
 ![WideScreeshotModalClosed](./PetFinderimages/WideScreenModalClosed.PNG)
 ![WideScreen](./PetFinderimages/WideScreenBreedsPopulated.PNG)
